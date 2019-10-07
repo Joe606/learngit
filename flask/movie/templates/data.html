@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	{% if data|length < 50 %}
+		<p>{{data}}</p>
+	{% else %}
+		<p> 导演：{{data[0]}}</p> <br>
+		<p> 评分：{{data[1]}}</p> 
+		<p> 位置x：{{data[2]}}</p>
+		<p> 星级：{{data[3]}}</p>
+		<p> 片名：{{data[4]}}</p>
+		<p> 详情地址：{{data[5]}}</p>
+		<p> 演员表：{{data[6]}}</p>
+		<p> 封面链接：{{data[7]}}</p>
+		<p> 序号：{{data[8]}}</p>
+		<p> 位置y{{data[9]}}</p>
+		 	
+	{% endif %}
+	
+{% endblock %}
